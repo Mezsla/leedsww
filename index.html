@@ -6,6 +6,15 @@
     <meta charset="utf-8"/>
     <meta name="author" content="tg"/>
 <!--    <script src="http://requirejs.org/docs/release/2.1.15/minified/require.js"></script>-->
+    <style type="text/css">
+    {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none; / Disable selection/copy in UIWebView */
+    }
+    </style>
+    <script type="text/javascript">
+        document.ontouchmove = function(e) {e.preventDefault()};
+    </script>
 <script type="text/javascript">
     // Weixin
     function registerHandlerForWeixinShareContent()
